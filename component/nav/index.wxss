@@ -1,0 +1,35 @@
+.layout-nav {
+    background-color: #FFF;
+    border-top: 2rpx solid #e3e3e3;
+    width: 100%;
+    display: flex;
+}
+.layout-nav .item {
+    padding: 4rpx 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.layout-nav .item image {
+    display: block;
+    height: 52rpx;
+    width: 52rpx;
+}
+.layout-nav .item text {
+    display: block;
+    font-size: 24rpx;
+    color: #6f6f6f;
+}
+.layout-nav .item.active text {
+    color: #2468a5;
+}
+.layout-nav .item.active image,
+.layout-nav .item image.active {
+    display: none;
+}
+.layout-nav .item.active image.active {
+    display: block;
+}

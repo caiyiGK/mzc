@@ -1,0 +1,4 @@
+<!-- 组件模版 -->
+<view class="class-tag {{bool ? 'active' : ''}}">
+    {{text}}
+</view>

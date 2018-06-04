@@ -1,5 +1,9 @@
 {
     "usingComponents": {
-        "component-nav": "../../component/nav/index"
+        "component-swiper": "../../component/banner/index",
+        "component-nav": "../../component/nav/index",
+        "component-class-online": "../../component/classOnline/index",
+        "component-class-live": "../../component/classLive/index",
+        "component-class-tag": "../../component/classTag/index"
     }
 }

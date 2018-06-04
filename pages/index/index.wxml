@@ -1,21 +1,126 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class="layout-page">
 
-    <!-- nav -->
-    <component-nav>
-        <view slot="before">这是slot 数据 before</view>
-        这是slot 数据
-        <view slot="after">这是slot 数据 after</view>
-    </component-nav>
+    <!-- 幻灯 -->
+    <view class="layout-banner">
+        <view class="content">
+            <component-swiper />
+        </view>
+    </view>
 
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+    <!-- TAB -->
+    <view class="layout-tab-link">
+        <view class="content">
+            <!-- loop -->
+            <navigator url="/pages/logs/logs" hover-class="class-hover" class="item">
+                <image src="../../images/icon/link-1.png" />
+                <view>
+                    <text class="hd">我要上节目</text>
+                    <text class="brief">争当明星妈妈</text>
+                </view>
+            </navigator>
+            <navigator url="/pages/logs/logs" hover-class="class-hover" class="item">
+                <image src="../../images/icon/link-2.png" />
+                <view>
+                    <text class="hd">定制课程表</text>
+                    <text class="brief">小白妈妈快速升级</text>
+                </view>
+            </navigator>
+        </view>
+    </view>
+
+    <!-- 直播课程 -->
+    <view class="layout-panel layout-live">
+        <view class="content">
+            <view class="layout-hd color-w clearfix">
+                <span class="hd">线上课程</span>
+                <text> · 未开始（5月13日18:00）</text>
+                <span class="btn">查看更多</span>
+                <image src="../../images/bg/layout-hd.png"></image>
+            </view>
+
+            <view class="content-loop">
+                <component-class-live />
+            </view>
+        </view>
+    </view>
+
+    <!-- 线上课程 -->
+    <view class="layout-panel layout-online">
+        <view class="content">
+            <view class="layout-hd clearfix">
+                <span class="hd">线上课程</span>
+                <span class="btn">查看更多</span>
+            </view>
+
+            <view class="content-loop">
+
+                <block wx:for="{{[1, 2, 3]}}" wx:key="index">
+                    <component-class-online class="item" />
+                </block>
+
+            </view>
+        </view>
+    </view>
+
+    <!-- 新科募集 -->
+    <view class="layout-panel">
+        <view class="content">
+            <view class="layout-hd clearfix">
+                <span class="hd">新科募集</span>
+                <text> · 选择您感兴趣的关键词支持开课</text>
+                <span class="btn">点击刷新</span>
+            </view>
+
+            <view class="clearfix loop-tag">
+
+                <block wx:for="{{[1, 2, 3, 4, 5, 6]}}" wx:key="index">
+                    <view>
+                        <component-class-tag
+                            bindtap="classTag"
+                            data-index="{{index}}"
+                            text="{{item}}"  />
+                    </view>
+                </block>
+
+            </view>
+        </view>
+    </view>
+
+    <!-- 导航 -->
+    <view class="layout-position">
+        <component-nav />
+    </view>
+
+    <!-- 问答 -->
+    <view class="layout-panel layout-question">
+        <view class="content">
+            <view class="layout-hd clearfix">
+                <span class="hd">问答</span>
+                <span class="btn">查看更多</span>
+            </view>
+
+            <view class="content-loop">
+                <view class="layout-question-tab">
+                    <image src="../../images/bg/question-bg.jpg" />
+                    <view class="hd">
+                        <image src="../../images/icon/icon-tab.png" />
+                        来自课程：轻松散步，让你获得一个最安静的宝宝
+                    </view>
+                    <view class="info">
+                        <view class="pic">
+                            <image src="" />
+                        </view>
+                        <view class="txt">该怎么解决宝宝多动、厌食、失眠、爱哭等问</view>
+                    </view>
+                    <view class="btn">
+                        <view class="praise">4215</view>
+                        <view class="read">已订阅</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+
 </view>

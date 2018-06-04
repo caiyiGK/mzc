@@ -1,0 +1,17 @@
+.class-tag {
+    background-color: #f2f2f2;
+    border-radius: 10rpx;
+    font-size: 24rpx;
+    color: #666;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+.class-tag.active {
+    color: #1275bb;
+    border: 1px solid #1275bb;
+    background-color: #eaf7ff;
+}
+

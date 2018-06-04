@@ -1,0 +1,23 @@
+<!-- 组件模版 -->
+<swiper
+    indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}"
+    interval="{{interval}}"
+    duration="{{duration}}"
+    circular="{{circular}}"
+    indicatorColor="{{indicatorColor}}"
+    indicatorActiveColor="{{indicatorActiveColor}}"
+    style="width: {{imgwidth*2}}rpx; height: {{imgheight*2}}rpx;">
+
+    <block wx:for="{{imgUrls}}" wx:key="index">
+        <!-- loop -->
+        <swiper-item>
+          <image
+            src="../../static/images/banner.jpg"
+            bindload="imageLoad"
+            style="width: 100%; height: {{imgheight*2}}rpx;"
+            class="slide-image" />
+        </swiper-item>
+    </block>
+
+</swiper>

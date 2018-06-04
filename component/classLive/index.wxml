@@ -1,0 +1,16 @@
+<!-- 组件模版 -->
+<navigator url="/pages/logs/logs" hover-class="class-hover" class="layout-class-live">
+    <view class="pic"></view>
+    <view class="info">
+        <text class="title">宝宝学习好妈妈少烦恼</text>
+        <view>
+            <text class="t1">李庆民/蒋卓勋</text>
+            <text class="t2">中山大学营养系教授</text>
+            <text class="t3">9月20日 14:00开播</text>
+            <view>
+                <text class="price">¥ 9.00</text>
+                <text class="nu">2938人订阅</text>
+            </view>
+        </view>
+    </view>
+</navigator>

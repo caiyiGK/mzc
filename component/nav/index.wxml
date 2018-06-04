@@ -1,7 +1,28 @@
 <!-- 组件模版 -->
-<view class="wrapper">
-    <slot name="before"></slot>
-    <view>这里是组件的内部节点</view>
-    <slot></slot>
-    <slot name="after"></slot>
+<view class="layout-nav">
+    <view class="item active">
+        <image src="../../images/icon/icon-nav-2.png" />
+        <image src="../../images/icon/icon-nav-2.png" class="active" />
+        <text>发现</text>
+    </view>
+    <view class="item">
+        <image src="../../images/icon/icon-nav-2.png" />
+        <image src="../../images/icon/icon-nav-2.png" class="active" />
+        <text>直播</text>
+    </view>
+    <view class="item">
+        <image src="../../images/icon/icon-nav-2.png" />
+        <image src="../../images/icon/icon-nav-2.png" class="active" />
+        <text>所有课程</text>
+    </view>
+    <view class="item">
+        <image src="../../images/icon/icon-nav-2.png" />
+        <image src="../../images/icon/icon-nav-2.png" class="active" />
+        <text>订阅</text>
+    </view>
+    <view class="item">
+        <image src="../../images/icon/icon-nav-2.png" />
+        <image src="../../images/icon/icon-nav-2.png" class="active" />
+        <text>我的</text>
+    </view>
 </view>

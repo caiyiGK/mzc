@@ -1,0 +1,71 @@
+.layout-class-live {
+    box-sizing: border-box;
+    padding: 20rpx 15rpx;
+    display: flex;
+    justify-content: space-between;
+}
+.class-hover {
+    background-color: #fafafa;
+}
+.layout-class-live .pic {
+    background-color: #fafafa;
+    height: 170rpx;
+    width: 175rpx;
+}
+.layout-class-live .info {
+    padding-left: 25rpx;
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.layout-class-live .info .title {
+    height: 70rpx;
+    line-height: 35rpx;
+    font-size: 30rpx;
+    color: #333;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.layout-class-live .info > view {
+    box-sizing: border-box;
+    padding-right: 180rpx;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.layout-class-live .info > view text {
+    font-size: 24rpx;
+    color: 333;
+    display: block;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    line-height: 35rpx;
+}
+.layout-class-live .info > view .t2 {
+    color: #888;
+}
+.layout-class-live .info > view .t3 {
+    color: #2468a5;
+}
+.layout-class-live .info > view > view {
+    position: absolute;
+    right: 10rpx;
+    bottom: 20rpx;
+    text-align: right;
+    width: 180rpx;
+}
+.layout-class-live .info > view > view .price {
+    font-size: 32rpx;
+    color: #0f71b8;
+    font-weight: 600;
+    margin-bottom: 5rpx;
+}
+.layout-class-live .info > view > view .number {
+    font-size: 20rpx;
+    color: #333;
+}

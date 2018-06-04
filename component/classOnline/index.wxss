@@ -1,0 +1,60 @@
+.layout-class-online {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15rpx;
+}
+.class-hover {
+    background-color: #fafafa;
+}
+.layout-class-online .pic {
+    background: #fafafa;
+    position: relative;
+    height: 170rpx;
+    width: 160rpx;
+    border-radius: 10rpx;
+    overflow: hidden;
+}
+.layout-class-online .pic text {
+    background-color: #f4f1ee;
+    box-sizing: border-box;
+    display: block;
+    padding: 5rpx 10rpx;
+    position: absolute;
+    font-size: 20rpx;
+    color: #2468a5;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.layout-class-online .info {
+    flex: 1;
+    overflow: hidden;
+    color: #333;
+    font-size: 24rpx;
+    padding: 0 20rpx;
+}
+.layout-class-online .info .hd {
+    margin: 15rpx 0 20rpx;
+    display: block;
+    font-size: 30rpx;
+    height: 80rpx;
+    line-height: 40rpx;
+}
+.layout-class-online .info view text {
+    display: inline-block;
+    color: #888;
+}
+.layout-class-online .price {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.layout-class-online .price text {
+    background-color: #e7f6ff;
+    display: inline-block;
+    padding: 0  20rpx;
+    border-radius: 50rpx;
+    font-size: 32rpx;
+    color: #2468a5;
+}
