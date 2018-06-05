@@ -1,21 +1,110 @@
 /**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/** banner **/
+.layout-banner {
+    padding: 0 25rpx;
+}
+.layout-banner .content {
+    display: block;
+    border-radius: 20rpx;
+    overflow: hidden;
+    box-shadow: 0rpx 0rpx 10rpx #666;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+/** 顶部tab **/
+.layout-tab-link {
+    padding: 0 25rpx;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.layout-tab-link .content {
+    display: flex;
+    justify-content: space-between;
+    margin: 20rpx -7rpx;
+}
+.layout-tab-link .item {
+    border-radius: 6rpx;
+    display: inline-flex;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 30rpx 10rpx;
+    background-color: #FFF;
+    box-shadow: 0rpx 0rpx 2rpx #999;
+    flex: 1;
+    margin: 0 7rpx;
+}
+.layout-tab-link .item image {
+    height: 80rpx;
+    width: 80rpx;
+}
+.layout-tab-link .item view {
+    margin-left: 10rpx;
+    overflow: hidden;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+}
+.layout-tab-link .item view text {
+    display: block;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.layout-tab-link .item view .hd {
+    font-size: 32rpx;
+    color: #1376bc;
+}
+.layout-tab-link .item view .brief {
+    font-size: 24rpx;
+    color: #3baae2;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+/** 直播 **/
+.layout-live .content {
+    padding-bottom: 15rpx;
+    box-shadow: 0px 2rpx 2rpx #2468a5;
+    border-radius: 0rpx 0rpx 6rpx 6rpx;
 }
 
-.usermotto {
-  margin-top: 200px;
+/** 在线课程 **/
+.layout-online .content .content-loop {
+    padding-top: 20rpx;
+}
+.layout-online .content .content-loop .item {
+    display: block;
+    margin-bottom: 40rpx;
+}
+.layout-online .content .content-loop .item:last-child {
+    margin-bottom: 0;
+}
+
+/** 新课募集 **/
+.layout-panel .content .loop-tag  {
+    margin: 20rpx -5rpx 0;
+}
+.layout-panel .content .loop-tag > view {
+    box-sizing: border-box;
+    width: 33.333333%;
+    float: left;
+    padding: 0 5rpx 10rpx;
+}
+
+/** 问答 **/
+.layout-question {
+    padding-bottom: 40rpx;
+}
+.layout-question .content-loop {
+    width: 100%;
+    overflow: hidden;
+}
+.layout-question .content-loop .scroll-question-x {
+    display: flex;
+}
+.layout-question .content-loop .item {
+    margin: 0 30rpx 20rpx 0;
+}
+.layout-question .content-loop .item:last-child {
+    margin-right: 0;
 }

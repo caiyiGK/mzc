@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view class="layout-page">
+<view class="layout-page layout-page-menu">
 
     <!-- 幻灯 -->
     <view class="layout-banner">
@@ -87,11 +87,6 @@
         </view>
     </view>
 
-    <!-- 导航 -->
-    <view class="layout-position">
-        <component-nav />
-    </view>
-
     <!-- 问答 -->
     <view class="layout-panel layout-question">
         <view class="content">
@@ -101,26 +96,22 @@
             </view>
 
             <view class="content-loop">
-                <view class="layout-question-tab">
-                    <image src="../../images/bg/question-bg.jpg" />
-                    <view class="hd">
-                        <image src="../../images/icon/icon-tab.png" />
-                        来自课程：轻松散步，让你获得一个最安静的宝宝
+
+                <scroll-view scroll-x>
+                    <view class="scroll-question-x" style="width: {{[1, 2, 3].length * 430 - 24}}rpx;">
+                        <block wx:for="{{[1, 2, 3]}}" wx:key="index">
+                            <component-class-question class="item" />
+                        </block>
                     </view>
-                    <view class="info">
-                        <view class="pic">
-                            <image src="" />
-                        </view>
-                        <view class="txt">该怎么解决宝宝多动、厌食、失眠、爱哭等问</view>
-                    </view>
-                    <view class="btn">
-                        <view class="praise">4215</view>
-                        <view class="read">已订阅</view>
-                    </view>
-                </view>
+                </scroll-view>
+
             </view>
         </view>
     </view>
 
+    <!-- 导航 -->
+    <view class="layout-position">
+        <component-nav />
+    </view>
 
 </view>

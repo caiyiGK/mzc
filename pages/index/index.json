@@ -4,6 +4,7 @@
         "component-nav": "../../component/nav/index",
         "component-class-online": "../../component/classOnline/index",
         "component-class-live": "../../component/classLive/index",
-        "component-class-tag": "../../component/classTag/index"
+        "component-class-tag": "../../component/classTag/index",
+        "component-class-question": "../../component/classQuestion/index"
     }
 }
