@@ -1,0 +1,28 @@
+<!-- 组件模版 -->
+<view class="layout-question-tab">
+    <image src="../../images/bg/question-bg.jpg" />
+    <view class="hd">
+        <image src="../../images/icon/icon-tab.png" />
+        来自课程：轻松散步，让你获得一个最安静的宝宝
+    </view>
+    <view class="info">
+        <view class="pic">
+            <image src="" />
+        </view>
+        <view class="txt">
+            <text>该怎么解决宝宝多动、厌食、失眠、爱哭等问</text>
+        </view>
+    </view>
+    <view class="audio">
+        <view class="" class="time">
+            <text>18</text>s
+        </view>
+        <view class="pic">
+            <image src="" />
+        </view>
+    </view>
+    <view class="btn">
+        <view class="praise">4215</view>
+        <view class="read">已订阅</view>
+    </view>
+</view>
